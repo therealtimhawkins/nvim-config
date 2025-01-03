@@ -12,7 +12,6 @@ return require("packer").startup(function(use)
 	use("nvim-treesitter/nvim-treesitter", { run = ":TSUpdate" })
 	use({ "github/copilot.vim" })
 	use("mbbill/undotree")
-	use("tpope/vim-fugitive")
 	use({
 		"nvim-neotest/neotest",
 		requires = {
@@ -22,6 +21,13 @@ return require("packer").startup(function(use)
 			"nvim-treesitter/nvim-treesitter",
 			"marilari88/neotest-vitest",
 			"haydenmeade/neotest-jest",
+		},
+	})
+	use({
+		"kdheepak/lazygit.nvim",
+		-- optional for floating window border decoration
+		requires = {
+			"nvim-lua/plenary.nvim",
 		},
 	})
 	use({

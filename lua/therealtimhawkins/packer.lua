@@ -30,6 +30,27 @@ return require("packer").startup(function(use)
 		"neovim/nvim-lspconfig",
 	})
 	use({
+		"saghen/blink.cmp",
+		requires = "rafamadriz/friendly-snippets",
+		tag = "*",
+		run = "cargo build --release",
+		config = function()
+			require("blink.cmp").setup({
+				keymap = { preset = "default" },
+				appearance = {
+					use_nvim_cmp_as_default = true,
+					nerd_font_variant = "mono",
+				},
+				sources = {
+					default = { "lsp", "path", "snippets", "buffer" },
+				},
+				signature = {
+					enabled = true,
+				},
+			})
+		end,
+	})
+	use({
 		"stevearc/oil.nvim",
 		config = function()
 			require("oil").setup()

@@ -3,7 +3,10 @@ require("mason").setup()
 require("mason-lspconfig").setup({ ensure_installed = { "ts_ls" } })
 
 local lspconfig = require("lspconfig")
-lspconfig.ts_ls.setup({})
+local capabilities = require("blink.cmp").get_lsp_capabilities()
+
+lspconfig.ts_ls.setup({ capabilities = capabilities })
+lspconfig.lua_ls.setup({ capabilities = capabilities })
 
 vim.api.nvim_create_autocmd("LspAttach", {
 	group = vim.api.nvim_create_augroup("kickstart-lsp-attach", { clear = true }),

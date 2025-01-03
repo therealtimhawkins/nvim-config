@@ -125,7 +125,6 @@ _G.packer_plugins = {
     url = "https://github.com/marilari88/neotest-vitest"
   },
   ["nvim-lspconfig"] = {
-    config = { "\27LJ\2\nƒ\3\0\0\5\0\15\0 6\0\0\0'\2\1\0B\0\2\0029\0\2\0B\0\1\0016\0\0\0'\2\3\0B\0\2\0029\0\2\0005\2\5\0005\3\4\0=\3\6\2B\0\2\0016\0\0\0'\2\a\0B\0\2\0029\0\b\0009\0\2\0004\2\0\0B\0\2\0016\0\0\0'\2\a\0B\0\2\0029\0\t\0009\0\2\0005\2\r\0005\3\v\0005\4\n\0=\4\f\3=\3\14\2B\0\2\1K\0\1\0\17init_options\1\0\1\17init_options\0\16preferences\1\0\1\16preferences\0\1\0\2 importModuleSpecifierEnding\fminimal$importModuleSpecifierPreference\rrelative\nts_ls\vlua_ls\14lspconfig\21ensure_installed\1\0\1\21ensure_installed\0\1\3\0\0\vlua_ls\nts_ls\20mason-lspconfig\nsetup\nmason\frequire\0" },
     loaded = true,
     path = "/Users/timothy.hawkins/.local/share/nvim/site/pack/packer/start/nvim-lspconfig",
     url = "https://github.com/neovim/nvim-lspconfig"
@@ -204,10 +203,6 @@ _G.packer_plugins = {
 }
 
 time([[Defining packer_plugins]], false)
--- Config for: nvim-lspconfig
-time([[Config for nvim-lspconfig]], true)
-try_loadstring("\27LJ\2\nƒ\3\0\0\5\0\15\0 6\0\0\0'\2\1\0B\0\2\0029\0\2\0B\0\1\0016\0\0\0'\2\3\0B\0\2\0029\0\2\0005\2\5\0005\3\4\0=\3\6\2B\0\2\0016\0\0\0'\2\a\0B\0\2\0029\0\b\0009\0\2\0004\2\0\0B\0\2\0016\0\0\0'\2\a\0B\0\2\0029\0\t\0009\0\2\0005\2\r\0005\3\v\0005\4\n\0=\4\f\3=\3\14\2B\0\2\1K\0\1\0\17init_options\1\0\1\17init_options\0\16preferences\1\0\1\16preferences\0\1\0\2 importModuleSpecifierEnding\fminimal$importModuleSpecifierPreference\rrelative\nts_ls\vlua_ls\14lspconfig\21ensure_installed\1\0\1\21ensure_installed\0\1\3\0\0\vlua_ls\nts_ls\20mason-lspconfig\nsetup\nmason\frequire\0", "config", "nvim-lspconfig")
-time([[Config for nvim-lspconfig]], false)
 -- Config for: oil.nvim
 time([[Config for oil.nvim]], true)
 try_loadstring("\27LJ\2\n1\0\0\3\0\3\0\0066\0\0\0'\2\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\nsetup\boil\frequire\0", "config", "oil.nvim")

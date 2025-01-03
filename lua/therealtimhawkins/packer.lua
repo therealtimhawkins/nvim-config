@@ -25,28 +25,9 @@ return require("packer").startup(function(use)
 		},
 	})
 	use({
+		"williamboman/mason.nvim",
+		"williamboman/mason-lspconfig.nvim",
 		"neovim/nvim-lspconfig",
-		requires = {
-			"williamboman/mason.nvim",
-			"williamboman/mason-lspconfig.nvim",
-		},
-		config = function()
-			require("mason").setup()
-			require("mason-lspconfig").setup({
-				ensure_installed = { "lua_ls", "ts_ls" },
-			})
-
-			-- Now set up the LSP servers
-			require("lspconfig").lua_ls.setup({})
-			require("lspconfig").ts_ls.setup({
-				init_options = {
-					preferences = {
-						importModuleSpecifierPreference = "relative",
-						importModuleSpecifierEnding = "minimal",
-					},
-				},
-			})
-		end,
 	})
 	use({
 		"stevearc/oil.nvim",

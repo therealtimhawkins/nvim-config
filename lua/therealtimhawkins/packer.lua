@@ -69,4 +69,5 @@ return require("packer").startup(function(use)
 	use("Mofiqul/dracula.nvim")
 	use("jose-elias-alvarez/typescript.nvim") -- Enhanced TypeScript support
 	use("ludovicchabant/vim-gutentags") -- For better tag management
+	use("lewis6991/gitsigns.nvim") -- Git signs
 end)

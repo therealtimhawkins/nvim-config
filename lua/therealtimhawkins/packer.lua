@@ -75,4 +75,26 @@ return require("packer").startup(function(use)
 		"nvim-lualine/lualine.nvim",
 		requires = { "nvim-tree/nvim-web-devicons", opt = true },
 	})
+	use({
+		"krisajenkins/telescope-docker.nvim",
+		requires = { "nvim-telescope/telescope.nvim" },
+	})
+	use({
+		"tpope/vim-dadbod",
+		requires = {
+			"kristijanhusak/vim-dadbod-ui",
+			"tpope/vim-dotenv", -- optional, for loading .env files
+		},
+		config = function()
+			-- Optional: Add configuration here
+			vim.g.db_ui_save_location = vim.fn.stdpath("config") .. "/db_ui"
+			vim.g.db_ui_use_nerd_fonts = 1
+
+			-- Optional: Add key mappings
+			vim.keymap.set("n", "<leader>du", ":DBUIToggle<CR>", { silent = true })
+			vim.keymap.set("n", "<leader>df", ":DBUIFindBuffer<CR>", { silent = true })
+			vim.keymap.set("n", "<leader>dr", ":DBUIRenameBuffer<CR>", { silent = true })
+			vim.keymap.set("n", "<leader>dl", ":DBUILastQueryInfo<CR>", { silent = true })
+		end,
+	})
 end)

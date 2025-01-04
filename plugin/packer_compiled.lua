@@ -80,7 +80,7 @@ _G.packer_plugins = {
     url = "https://github.com/antoinemadec/FixCursorHold.nvim"
   },
   ["blink.cmp"] = {
-    config = { "\27LJ\2\n¥\2\0\0\5\0\14\0\0176\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\4\0005\3\3\0=\3\5\0025\3\6\0=\3\a\0025\3\t\0005\4\b\0=\4\n\3=\3\v\0025\3\f\0=\3\r\2B\0\2\1K\0\1\0\14signature\1\0\1\fenabled\2\fsources\fdefault\1\0\1\fdefault\0\1\5\0\0\blsp\tpath\rsnippets\vbuffer\15appearance\1\0\2\28use_nvim_cmp_as_default\2\22nerd_font_variant\tmono\vkeymap\1\0\4\vkeymap\0\fsources\0\14signature\0\15appearance\0\1\0\1\vpreset\fdefault\nsetup\14blink.cmp\frequire\0" },
+    config = { "\27LJ\2\n¥\2\0\0\5\0\14\0\0176\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\4\0005\3\3\0=\3\5\0025\3\6\0=\3\a\0025\3\t\0005\4\b\0=\4\n\3=\3\v\0025\3\f\0=\3\r\2B\0\2\1K\0\1\0\14signature\1\0\1\fenabled\2\fsources\fdefault\1\0\1\fdefault\0\1\5\0\0\blsp\tpath\rsnippets\vbuffer\15appearance\1\0\2\22nerd_font_variant\tmono\28use_nvim_cmp_as_default\2\vkeymap\1\0\4\fsources\0\14signature\0\15appearance\0\vkeymap\0\1\0\1\vpreset\fdefault\nsetup\14blink.cmp\frequire\0" },
     loaded = true,
     path = "/Users/timothy.hawkins/.local/share/nvim/site/pack/packer/start/blink.cmp",
     url = "https://github.com/saghen/blink.cmp"
@@ -202,6 +202,11 @@ _G.packer_plugins = {
     path = "/Users/timothy.hawkins/.local/share/nvim/site/pack/packer/start/promise-async",
     url = "https://github.com/kevinhwang91/promise-async"
   },
+  ["telescope-docker.nvim"] = {
+    loaded = true,
+    path = "/Users/timothy.hawkins/.local/share/nvim/site/pack/packer/start/telescope-docker.nvim",
+    url = "https://github.com/krisajenkins/telescope-docker.nvim"
+  },
   ["telescope.nvim"] = {
     loaded = true,
     path = "/Users/timothy.hawkins/.local/share/nvim/site/pack/packer/start/telescope.nvim",
@@ -216,6 +221,22 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/timothy.hawkins/.local/share/nvim/site/pack/packer/start/undotree",
     url = "https://github.com/mbbill/undotree"
+  },
+  ["vim-dadbod"] = {
+    config = { "\27LJ\2\n¡\3\0\0\6\0\23\0/6\0\0\0009\0\1\0006\1\0\0009\1\3\0019\1\4\1'\3\5\0B\1\2\2'\2\6\0&\1\2\1=\1\2\0006\0\0\0009\0\1\0)\1\1\0=\1\a\0006\0\0\0009\0\b\0009\0\t\0'\2\n\0'\3\v\0'\4\f\0005\5\r\0B\0\5\0016\0\0\0009\0\b\0009\0\t\0'\2\n\0'\3\14\0'\4\15\0005\5\16\0B\0\5\0016\0\0\0009\0\b\0009\0\t\0'\2\n\0'\3\17\0'\4\18\0005\5\19\0B\0\5\0016\0\0\0009\0\b\0009\0\t\0'\2\n\0'\3\20\0'\4\21\0005\5\22\0B\0\5\1K\0\1\0\1\0\1\vsilent\2\27:DBUILastQueryInfo<CR>\15<leader>dl\1\0\1\vsilent\2\26:DBUIRenameBuffer<CR>\15<leader>dr\1\0\1\vsilent\2\24:DBUIFindBuffer<CR>\15<leader>df\1\0\1\vsilent\2\20:DBUIToggle<CR>\15<leader>du\6n\bset\vkeymap\25db_ui_use_nerd_fonts\v/db_ui\vconfig\fstdpath\afn\24db_ui_save_location\6g\bvim\0" },
+    loaded = true,
+    path = "/Users/timothy.hawkins/.local/share/nvim/site/pack/packer/start/vim-dadbod",
+    url = "https://github.com/tpope/vim-dadbod"
+  },
+  ["vim-dadbod-ui"] = {
+    loaded = true,
+    path = "/Users/timothy.hawkins/.local/share/nvim/site/pack/packer/start/vim-dadbod-ui",
+    url = "https://github.com/kristijanhusak/vim-dadbod-ui"
+  },
+  ["vim-dotenv"] = {
+    loaded = true,
+    path = "/Users/timothy.hawkins/.local/share/nvim/site/pack/packer/start/vim-dotenv",
+    url = "https://github.com/tpope/vim-dotenv"
   },
   ["vim-gutentags"] = {
     loaded = true,
@@ -237,8 +258,12 @@ _G.packer_plugins = {
 time([[Defining packer_plugins]], false)
 -- Config for: blink.cmp
 time([[Config for blink.cmp]], true)
-try_loadstring("\27LJ\2\n¥\2\0\0\5\0\14\0\0176\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\4\0005\3\3\0=\3\5\0025\3\6\0=\3\a\0025\3\t\0005\4\b\0=\4\n\3=\3\v\0025\3\f\0=\3\r\2B\0\2\1K\0\1\0\14signature\1\0\1\fenabled\2\fsources\fdefault\1\0\1\fdefault\0\1\5\0\0\blsp\tpath\rsnippets\vbuffer\15appearance\1\0\2\28use_nvim_cmp_as_default\2\22nerd_font_variant\tmono\vkeymap\1\0\4\vkeymap\0\fsources\0\14signature\0\15appearance\0\1\0\1\vpreset\fdefault\nsetup\14blink.cmp\frequire\0", "config", "blink.cmp")
+try_loadstring("\27LJ\2\n¥\2\0\0\5\0\14\0\0176\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\4\0005\3\3\0=\3\5\0025\3\6\0=\3\a\0025\3\t\0005\4\b\0=\4\n\3=\3\v\0025\3\f\0=\3\r\2B\0\2\1K\0\1\0\14signature\1\0\1\fenabled\2\fsources\fdefault\1\0\1\fdefault\0\1\5\0\0\blsp\tpath\rsnippets\vbuffer\15appearance\1\0\2\22nerd_font_variant\tmono\28use_nvim_cmp_as_default\2\vkeymap\1\0\4\fsources\0\14signature\0\15appearance\0\vkeymap\0\1\0\1\vpreset\fdefault\nsetup\14blink.cmp\frequire\0", "config", "blink.cmp")
 time([[Config for blink.cmp]], false)
+-- Config for: vim-dadbod
+time([[Config for vim-dadbod]], true)
+try_loadstring("\27LJ\2\n¡\3\0\0\6\0\23\0/6\0\0\0009\0\1\0006\1\0\0009\1\3\0019\1\4\1'\3\5\0B\1\2\2'\2\6\0&\1\2\1=\1\2\0006\0\0\0009\0\1\0)\1\1\0=\1\a\0006\0\0\0009\0\b\0009\0\t\0'\2\n\0'\3\v\0'\4\f\0005\5\r\0B\0\5\0016\0\0\0009\0\b\0009\0\t\0'\2\n\0'\3\14\0'\4\15\0005\5\16\0B\0\5\0016\0\0\0009\0\b\0009\0\t\0'\2\n\0'\3\17\0'\4\18\0005\5\19\0B\0\5\0016\0\0\0009\0\b\0009\0\t\0'\2\n\0'\3\20\0'\4\21\0005\5\22\0B\0\5\1K\0\1\0\1\0\1\vsilent\2\27:DBUILastQueryInfo<CR>\15<leader>dl\1\0\1\vsilent\2\26:DBUIRenameBuffer<CR>\15<leader>dr\1\0\1\vsilent\2\24:DBUIFindBuffer<CR>\15<leader>df\1\0\1\vsilent\2\20:DBUIToggle<CR>\15<leader>du\6n\bset\vkeymap\25db_ui_use_nerd_fonts\v/db_ui\vconfig\fstdpath\afn\24db_ui_save_location\6g\bvim\0", "config", "vim-dadbod")
+time([[Config for vim-dadbod]], false)
 -- Config for: oil.nvim
 time([[Config for oil.nvim]], true)
 try_loadstring("\27LJ\2\n1\0\0\3\0\3\0\0066\0\0\0'\2\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\nsetup\boil\frequire\0", "config", "oil.nvim")

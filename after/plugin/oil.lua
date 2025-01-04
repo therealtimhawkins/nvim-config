@@ -1,3 +1,3 @@
 require("oil").setup()
 
-vim.keymap.set("n", "-o", "<CMD>Oil --float %:p:h<CR>", { desc = "Open directory" })
+vim.keymap.set("n", "go", "<CMD>Oil --float %:p:h<CR>", { desc = "Open directory" })

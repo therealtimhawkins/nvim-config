@@ -71,4 +71,8 @@ return require("packer").startup(function(use)
 	use("ludovicchabant/vim-gutentags") -- For better tag management
 	use("lewis6991/gitsigns.nvim") -- Git signs
 	use("lukas-reineke/indent-blankline.nvim")
+	use({
+		"nvim-lualine/lualine.nvim",
+		requires = { "nvim-tree/nvim-web-devicons", opt = true },
+	})
 end)

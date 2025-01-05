@@ -2,10 +2,10 @@ local highlight = {
 	"RainbowBlue",
 }
 local hooks = require("ibl.hooks")
--- create the highlight groups in the highlight setup hook, so they are reset
--- every time the colorscheme changes
+local colors = require("dracula").colors()
+
 hooks.register(hooks.type.HIGHLIGHT_SETUP, function()
-	vim.api.nvim_set_hl(0, "RainbowBlue", { fg = "#8be9fd" })
+	vim.api.nvim_set_hl(0, "RainbowBlue", { fg = colors.blue })
 end)
 
 vim.g.rainbow_delimiters = { highlight = highlight }

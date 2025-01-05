@@ -3,30 +3,22 @@
 -- MIT license, see LICENSE for more details.
 
 -- stylua: ignore
-local colors = {
-  blue   = '#8be9fd',
-  cyan   = '#bd93f9',
-  black  = '#080808',
-  white  = '#c6c6c6',
-  red    = '#ff5189',
-  violet = '#ff79c6',
-  grey   = '#303030',
-}
+local colors = require("dracula").colors()
 
 local bubbles_theme = {
 	normal = {
-		a = { fg = colors.black, bg = colors.violet },
-		b = { fg = colors.white, bg = colors.grey },
+		a = { fg = colors.black, bg = colors.cyan },
+		b = { fg = colors.white, bg = colors.bg },
 		c = { fg = colors.white },
 	},
 
-	insert = { a = { fg = colors.black, bg = colors.blue } },
-	visual = { a = { fg = colors.black, bg = colors.cyan } },
+	insert = { a = { fg = colors.black, bg = colors.pink } },
+	visual = { a = { fg = colors.black, bg = colors.purple } },
 	replace = { a = { fg = colors.black, bg = colors.red } },
 
 	inactive = {
-		a = { fg = colors.white, bg = colors.black },
-		b = { fg = colors.white, bg = colors.black },
+		a = { fg = colors.white, bg = colors.bg },
+		b = { fg = colors.white, bg = colors.bg },
 		c = { fg = colors.white },
 	},
 }

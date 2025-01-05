@@ -86,4 +86,5 @@ return require("packer").startup(function(use)
 			"tpope/vim-dotenv", -- optional, for loading .env files
 		},
 	})
+	use({ "windwp/nvim-autopairs" })
 end)

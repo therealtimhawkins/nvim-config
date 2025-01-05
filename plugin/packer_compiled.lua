@@ -74,13 +74,8 @@ end
 time([[try_loadstring definition]], false)
 time([[Defining packer_plugins]], true)
 _G.packer_plugins = {
-  ["FixCursorHold.nvim"] = {
-    loaded = true,
-    path = "/Users/timothy.hawkins/.local/share/nvim/site/pack/packer/start/FixCursorHold.nvim",
-    url = "https://github.com/antoinemadec/FixCursorHold.nvim"
-  },
   ["blink.cmp"] = {
-    config = { "\27LJ\2\n´\2\0\0\5\0\14\0\0176\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\4\0005\3\3\0=\3\5\0025\3\6\0=\3\a\0025\3\t\0005\4\b\0=\4\n\3=\3\v\0025\3\f\0=\3\r\2B\0\2\1K\0\1\0\14signature\1\0\1\fenabled\2\fsources\fdefault\1\0\1\fdefault\0\1\5\0\0\blsp\tpath\rsnippets\vbuffer\15appearance\1\0\2\28use_nvim_cmp_as_default\2\22nerd_font_variant\tmono\vkeymap\1\0\4\fsources\0\vkeymap\0\14signature\0\15appearance\0\1\0\1\vpreset\fdefault\nsetup\14blink.cmp\frequire\0" },
+    config = { "\27LJ\2\n´\2\0\0\5\0\14\0\0176\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\4\0005\3\3\0=\3\5\0025\3\6\0=\3\a\0025\3\t\0005\4\b\0=\4\n\3=\3\v\0025\3\f\0=\3\r\2B\0\2\1K\0\1\0\14signature\1\0\1\fenabled\2\fsources\fdefault\1\0\1\fdefault\0\1\5\0\0\blsp\tpath\rsnippets\vbuffer\15appearance\1\0\2\22nerd_font_variant\tmono\28use_nvim_cmp_as_default\2\vkeymap\1\0\4\fsources\0\14signature\0\15appearance\0\vkeymap\0\1\0\1\vpreset\fdefault\nsetup\14blink.cmp\frequire\0" },
     loaded = true,
     path = "/Users/timothy.hawkins/.local/share/nvim/site/pack/packer/start/blink.cmp",
     url = "https://github.com/saghen/blink.cmp"
@@ -140,30 +135,28 @@ _G.packer_plugins = {
     path = "/Users/timothy.hawkins/.local/share/nvim/site/pack/packer/start/neoscroll.nvim",
     url = "https://github.com/karb94/neoscroll.nvim"
   },
-  neotest = {
+  ["noice.nvim"] = {
+    config = { "\27LJ\2\n7\0\0\3\0\3\0\a6\0\0\0'\2\1\0B\0\2\0029\0\2\0004\2\0\0B\0\2\1K\0\1\0\nsetup\nnoice\frequire\0" },
+    load_after = {},
     loaded = true,
-    path = "/Users/timothy.hawkins/.local/share/nvim/site/pack/packer/start/neotest",
-    url = "https://github.com/nvim-neotest/neotest"
+    needs_bufread = false,
+    path = "/Users/timothy.hawkins/.local/share/nvim/site/pack/packer/opt/noice.nvim",
+    url = "https://github.com/folke/noice.nvim"
   },
-  ["neotest-jest"] = {
+  ["nui.nvim"] = {
     loaded = true,
-    path = "/Users/timothy.hawkins/.local/share/nvim/site/pack/packer/start/neotest-jest",
-    url = "https://github.com/haydenmeade/neotest-jest"
-  },
-  ["neotest-vitest"] = {
-    loaded = true,
-    path = "/Users/timothy.hawkins/.local/share/nvim/site/pack/packer/start/neotest-vitest",
-    url = "https://github.com/marilari88/neotest-vitest"
+    path = "/Users/timothy.hawkins/.local/share/nvim/site/pack/packer/start/nui.nvim",
+    url = "https://github.com/MunifTanjim/nui.nvim"
   },
   ["nvim-lspconfig"] = {
     loaded = true,
     path = "/Users/timothy.hawkins/.local/share/nvim/site/pack/packer/start/nvim-lspconfig",
     url = "https://github.com/neovim/nvim-lspconfig"
   },
-  ["nvim-nio"] = {
+  ["nvim-notify"] = {
     loaded = true,
-    path = "/Users/timothy.hawkins/.local/share/nvim/site/pack/packer/start/nvim-nio",
-    url = "https://github.com/nvim-neotest/nvim-nio"
+    path = "/Users/timothy.hawkins/.local/share/nvim/site/pack/packer/start/nvim-notify",
+    url = "https://github.com/rcarriga/nvim-notify"
   },
   ["nvim-treesitter"] = {
     loaded = true,
@@ -182,7 +175,6 @@ _G.packer_plugins = {
     url = "https://github.com/nvim-tree/nvim-web-devicons"
   },
   ["oil.nvim"] = {
-    config = { "\27LJ\2\n1\0\0\3\0\3\0\0066\0\0\0'\2\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\nsetup\boil\frequire\0" },
     loaded = true,
     path = "/Users/timothy.hawkins/.local/share/nvim/site/pack/packer/start/oil.nvim",
     url = "https://github.com/stevearc/oil.nvim"
@@ -242,11 +234,6 @@ _G.packer_plugins = {
     path = "/Users/timothy.hawkins/.local/share/nvim/site/pack/packer/start/vim-gutentags",
     url = "https://github.com/ludovicchabant/vim-gutentags"
   },
-  ["vscode.nvim"] = {
-    loaded = true,
-    path = "/Users/timothy.hawkins/.local/share/nvim/site/pack/packer/start/vscode.nvim",
-    url = "https://github.com/Mofiqul/vscode.nvim"
-  },
   ["yazi.nvim"] = {
     loaded = true,
     path = "/Users/timothy.hawkins/.local/share/nvim/site/pack/packer/start/yazi.nvim",
@@ -257,12 +244,17 @@ _G.packer_plugins = {
 time([[Defining packer_plugins]], false)
 -- Config for: blink.cmp
 time([[Config for blink.cmp]], true)
-try_loadstring("\27LJ\2\n´\2\0\0\5\0\14\0\0176\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\4\0005\3\3\0=\3\5\0025\3\6\0=\3\a\0025\3\t\0005\4\b\0=\4\n\3=\3\v\0025\3\f\0=\3\r\2B\0\2\1K\0\1\0\14signature\1\0\1\fenabled\2\fsources\fdefault\1\0\1\fdefault\0\1\5\0\0\blsp\tpath\rsnippets\vbuffer\15appearance\1\0\2\28use_nvim_cmp_as_default\2\22nerd_font_variant\tmono\vkeymap\1\0\4\fsources\0\vkeymap\0\14signature\0\15appearance\0\1\0\1\vpreset\fdefault\nsetup\14blink.cmp\frequire\0", "config", "blink.cmp")
+try_loadstring("\27LJ\2\n´\2\0\0\5\0\14\0\0176\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\4\0005\3\3\0=\3\5\0025\3\6\0=\3\a\0025\3\t\0005\4\b\0=\4\n\3=\3\v\0025\3\f\0=\3\r\2B\0\2\1K\0\1\0\14signature\1\0\1\fenabled\2\fsources\fdefault\1\0\1\fdefault\0\1\5\0\0\blsp\tpath\rsnippets\vbuffer\15appearance\1\0\2\22nerd_font_variant\tmono\28use_nvim_cmp_as_default\2\vkeymap\1\0\4\fsources\0\14signature\0\15appearance\0\vkeymap\0\1\0\1\vpreset\fdefault\nsetup\14blink.cmp\frequire\0", "config", "blink.cmp")
 time([[Config for blink.cmp]], false)
--- Config for: oil.nvim
-time([[Config for oil.nvim]], true)
-try_loadstring("\27LJ\2\n1\0\0\3\0\3\0\0066\0\0\0'\2\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\nsetup\boil\frequire\0", "config", "oil.nvim")
-time([[Config for oil.nvim]], false)
+-- Load plugins in order defined by `after`
+time([[Sequenced loading]], true)
+vim.cmd [[ packadd nui.nvim ]]
+vim.cmd [[ packadd noice.nvim ]]
+
+-- Config for: noice.nvim
+try_loadstring("\27LJ\2\n7\0\0\3\0\3\0\a6\0\0\0'\2\1\0B\0\2\0029\0\2\0004\2\0\0B\0\2\1K\0\1\0\nsetup\nnoice\frequire\0", "config", "noice.nvim")
+
+time([[Sequenced loading]], false)
 
 _G._packer.inside_compile = false
 if _G._packer.needs_bufread == true then

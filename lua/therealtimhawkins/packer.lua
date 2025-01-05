@@ -8,26 +8,29 @@ return require("packer").startup(function(use)
 		-- or                            , branch = '0.1.x',
 		requires = { { "nvim-lua/plenary.nvim" } },
 	})
-	use("Mofiqul/vscode.nvim")
 	use("nvim-treesitter/nvim-treesitter", { run = ":TSUpdate" })
 	use({ "github/copilot.vim" })
 	use("mbbill/undotree")
-	use({
-		"nvim-neotest/neotest",
-		requires = {
-			"nvim-neotest/nvim-nio",
-			"nvim-lua/plenary.nvim",
-			"antoinemadec/FixCursorHold.nvim",
-			"nvim-treesitter/nvim-treesitter",
-			"marilari88/neotest-vitest",
-			"haydenmeade/neotest-jest",
-		},
-	})
 	use({
 		"kdheepak/lazygit.nvim",
 		-- optional for floating window border decoration
 		requires = {
 			"nvim-lua/plenary.nvim",
+		},
+	})
+	use("MunifTanjim/nui.nvim")
+	use("rcarriga/nvim-notify")
+	use({
+		"folke/noice.nvim",
+		after = "nui.nvim", -- Ensures it loads after the dependency
+		config = function()
+			require("noice").setup({
+				-- add any options here
+			})
+		end,
+		requires = {
+			"MunifTanjim/nui.nvim",
+			"rcarriga/nvim-notify", -- Optional dependency
 		},
 	})
 	use({
@@ -58,9 +61,6 @@ return require("packer").startup(function(use)
 	})
 	use({
 		"stevearc/oil.nvim",
-		config = function()
-			require("oil").setup()
-		end,
 	})
 	use("karb94/neoscroll.nvim")
 	use("mikavilpas/yazi.nvim")

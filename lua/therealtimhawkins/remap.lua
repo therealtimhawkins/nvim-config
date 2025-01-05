@@ -12,3 +12,6 @@ vim.keymap.set("n", "grr", vim.lsp.buf.references)
 
 vim.keymap.set("v", "∆", ":m '>+1<CR>gv=gv")
 vim.keymap.set("v", "˚", ":m '<-2<CR>gv=gv")
+
+vim.keymap.set("i", "<C-l>", "<Right>", { noremap = true })
+vim.keymap.set("i", "<C-h>", "<Left>", { noremap = true })

@@ -5,6 +5,7 @@ dracula.setup({
 vim.cmd([[colorscheme dracula]])
 
 vim.opt.cursorline = true
+vim.cmd([[highlight clear CursorLine]]) -- Clear any existing cursorline highlights
 vim.cmd([[highlight CursorLineNr guifg=#8be9fd	]])
 
 -- Set default color for normal mode

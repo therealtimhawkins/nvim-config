@@ -5,6 +5,10 @@ vim.keymap.set("n", "<D-s>", ":w<CR>")
 vim.keymap.set("i", "<D-s>", "<Esc>:w<CR>")
 vim.keymap.set("v", "<D-s>", "<Esc>:w<CR>")
 
+vim.keymap.set("n", "<D-_>", "gcc")
+vim.keymap.set("x", "<D-_>", "gc")
+vim.keymap.set("v", "<D-_>", "gc")
+
 vim.keymap.set("n", "<leader>e", vim.diagnostic.open_float)
 
 vim.keymap.set("n", "grn", vim.lsp.buf.rename)

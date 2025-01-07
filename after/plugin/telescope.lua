@@ -27,7 +27,6 @@ telescope.setup({
 	},
 })
 
--- When setting up keymaps, you need to pass the picker options
 vim.keymap.set("n", "<leader>pf", function()
 	builtin.find_files(require("telescope.themes").get_ivy({}))
 end, { desc = "Telescope find files" })
@@ -46,3 +45,5 @@ end)
 vim.keymap.set("n", "<leader>pl", function()
 	builtin.live_grep(require("telescope.themes").get_ivy({}))
 end, { desc = "Telescope live grep" })
+
+vim.keymap.set("n", "<leader>po", "<CMD>Telescope oldfiles<CR>", { desc = "Find recently opened files" })

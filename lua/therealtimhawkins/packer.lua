@@ -1,11 +1,9 @@
 vim.cmd([[packadd packer.nvim]])
 return require("packer").startup(function(use)
-	-- Packer can manage itself
 	use("wbthomason/packer.nvim")
 	use({
 		"nvim-telescope/telescope.nvim",
 		tag = "0.1.8",
-		-- or                            , branch = '0.1.x',
 		requires = { { "nvim-lua/plenary.nvim" } },
 	})
 	use("nvim-treesitter/nvim-treesitter", { run = ":TSUpdate" })
@@ -13,7 +11,6 @@ return require("packer").startup(function(use)
 	use("mbbill/undotree")
 	use({
 		"kdheepak/lazygit.nvim",
-		-- optional for floating window border decoration
 		requires = {
 			"nvim-lua/plenary.nvim",
 		},
@@ -22,15 +19,13 @@ return require("packer").startup(function(use)
 	use("rcarriga/nvim-notify")
 	use({
 		"folke/noice.nvim",
-		after = "nui.nvim", -- Ensures it loads after the dependency
+		after = "nui.nvim",
 		config = function()
-			require("noice").setup({
-				-- add any options here
-			})
+			require("noice").setup({})
 		end,
 		requires = {
 			"MunifTanjim/nui.nvim",
-			"rcarriga/nvim-notify", -- Optional dependency
+			"rcarriga/nvim-notify",
 		},
 	})
 	use({
@@ -67,9 +62,8 @@ return require("packer").startup(function(use)
 	use({ "kevinhwang91/nvim-ufo", requires = "kevinhwang91/promise-async" })
 	use("stevearc/conform.nvim")
 	use("Mofiqul/dracula.nvim")
-	use("jose-elias-alvarez/typescript.nvim") -- Enhanced TypeScript support
-	use("ludovicchabant/vim-gutentags") -- For better tag management
-	use("lewis6991/gitsigns.nvim") -- Git signs
+	use("jose-elias-alvarez/typescript.nvim")
+	use("lewis6991/gitsigns.nvim")
 	use("lukas-reineke/indent-blankline.nvim")
 	use({
 		"nvim-lualine/lualine.nvim",
@@ -83,7 +77,7 @@ return require("packer").startup(function(use)
 		"tpope/vim-dadbod",
 		requires = {
 			"kristijanhusak/vim-dadbod-ui",
-			"tpope/vim-dotenv", -- optional, for loading .env files
+			"tpope/vim-dotenv",
 		},
 	})
 	use({ "windwp/nvim-autopairs" })

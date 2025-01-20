@@ -1,5 +1,10 @@
-vim.g.user_emmet_install_global = 0
-vim.cmd([[autocmd FileType html,css,javascriptreact,jsx EmmetInstall]])
-
--- Change the default Emmet leader key (default is <C-y>)
-vim.g.user_emmet_leader_key = "<C-e>"
+vim.g.user_emmet_mode = "n" -- only enable normal mode functions
+vim.g.user_emmet_leader_key = "," -- trigger emmet with ,,
+vim.g.user_emmet_settings = {
+	["javascript"] = {
+		["extends"] = "jsx",
+	},
+	["typescript"] = {
+		["extends"] = "tsx",
+	},
+}

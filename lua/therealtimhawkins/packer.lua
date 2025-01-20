@@ -82,7 +82,10 @@ return require("packer").startup(function(use)
 		},
 	})
 	use({ "windwp/nvim-autopairs" })
-	use("mattn/emmet-vim")
+	use({
+		"mattn/emmet-vim",
+		ft = { "html", "css", "javascript", "javascriptreact", "typescript", "typescriptreact", "vue", "svelte" },
+	})
 	use({
 		"folke/todo-comments.nvim",
 		requires = "nvim-lua/plenary.nvim",

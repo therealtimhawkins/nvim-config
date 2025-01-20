@@ -12,3 +12,5 @@ vim.opt.foldlevel = 99
 
 vim.g.loaded_netrw = 1
 vim.g.loaded_netrwPlugin = 1
+
+vim.g.gutentags_cache_dir = vim.fn.expand("~/.cache/nvim/ctags")

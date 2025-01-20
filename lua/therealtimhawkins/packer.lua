@@ -17,6 +17,7 @@ return require("packer").startup(function(use)
 	})
 	use("MunifTanjim/nui.nvim")
 	use("rcarriga/nvim-notify")
+	use("ludovicchabant/vim-gutentags")
 	use({
 		"folke/noice.nvim",
 		after = "nui.nvim",
@@ -81,4 +82,9 @@ return require("packer").startup(function(use)
 		},
 	})
 	use({ "windwp/nvim-autopairs" })
+	use("mattn/emmet-vim")
+	use({
+		"folke/todo-comments.nvim",
+		requires = "nvim-lua/plenary.nvim",
+	})
 end)

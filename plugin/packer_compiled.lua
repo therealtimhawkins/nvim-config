@@ -75,7 +75,7 @@ time([[try_loadstring definition]], false)
 time([[Defining packer_plugins]], true)
 _G.packer_plugins = {
   ["blink.cmp"] = {
-    config = { "\27LJ\2\n´\2\0\0\5\0\14\0\0176\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\4\0005\3\3\0=\3\5\0025\3\6\0=\3\a\0025\3\t\0005\4\b\0=\4\n\3=\3\v\0025\3\f\0=\3\r\2B\0\2\1K\0\1\0\14signature\1\0\1\fenabled\2\fsources\fdefault\1\0\1\fdefault\0\1\5\0\0\blsp\tpath\rsnippets\vbuffer\15appearance\1\0\2\22nerd_font_variant\tmono\28use_nvim_cmp_as_default\2\vkeymap\1\0\4\fsources\0\vkeymap\0\15appearance\0\14signature\0\1\0\1\vpreset\fdefault\nsetup\14blink.cmp\frequire\0" },
+    config = { "\27LJ\2\n´\2\0\0\5\0\14\0\0176\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\4\0005\3\3\0=\3\5\0025\3\6\0=\3\a\0025\3\t\0005\4\b\0=\4\n\3=\3\v\0025\3\f\0=\3\r\2B\0\2\1K\0\1\0\14signature\1\0\1\fenabled\2\fsources\fdefault\1\0\1\fdefault\0\1\5\0\0\blsp\tpath\rsnippets\vbuffer\15appearance\1\0\2\22nerd_font_variant\tmono\28use_nvim_cmp_as_default\2\vkeymap\1\0\4\15appearance\0\fsources\0\vkeymap\0\14signature\0\1\0\1\vpreset\fdefault\nsetup\14blink.cmp\frequire\0" },
     loaded = true,
     path = "/Users/timothy.hawkins/.local/share/nvim/site/pack/packer/start/blink.cmp",
     url = "https://github.com/saghen/blink.cmp"
@@ -94,6 +94,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/timothy.hawkins/.local/share/nvim/site/pack/packer/start/dracula.nvim",
     url = "https://github.com/Mofiqul/dracula.nvim"
+  },
+  ["emmet-vim"] = {
+    loaded = true,
+    path = "/Users/timothy.hawkins/.local/share/nvim/site/pack/packer/start/emmet-vim",
+    url = "https://github.com/mattn/emmet-vim"
   },
   ["friendly-snippets"] = {
     loaded = true,
@@ -209,6 +214,11 @@ _G.packer_plugins = {
     path = "/Users/timothy.hawkins/.local/share/nvim/site/pack/packer/start/telescope.nvim",
     url = "https://github.com/nvim-telescope/telescope.nvim"
   },
+  ["todo-comments.nvim"] = {
+    loaded = true,
+    path = "/Users/timothy.hawkins/.local/share/nvim/site/pack/packer/start/todo-comments.nvim",
+    url = "https://github.com/folke/todo-comments.nvim"
+  },
   ["typescript.nvim"] = {
     loaded = true,
     path = "/Users/timothy.hawkins/.local/share/nvim/site/pack/packer/start/typescript.nvim",
@@ -234,6 +244,11 @@ _G.packer_plugins = {
     path = "/Users/timothy.hawkins/.local/share/nvim/site/pack/packer/start/vim-dotenv",
     url = "https://github.com/tpope/vim-dotenv"
   },
+  ["vim-gutentags"] = {
+    loaded = true,
+    path = "/Users/timothy.hawkins/.local/share/nvim/site/pack/packer/start/vim-gutentags",
+    url = "https://github.com/ludovicchabant/vim-gutentags"
+  },
   ["yazi.nvim"] = {
     loaded = true,
     path = "/Users/timothy.hawkins/.local/share/nvim/site/pack/packer/start/yazi.nvim",
@@ -244,7 +259,7 @@ _G.packer_plugins = {
 time([[Defining packer_plugins]], false)
 -- Config for: blink.cmp
 time([[Config for blink.cmp]], true)
-try_loadstring("\27LJ\2\n´\2\0\0\5\0\14\0\0176\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\4\0005\3\3\0=\3\5\0025\3\6\0=\3\a\0025\3\t\0005\4\b\0=\4\n\3=\3\v\0025\3\f\0=\3\r\2B\0\2\1K\0\1\0\14signature\1\0\1\fenabled\2\fsources\fdefault\1\0\1\fdefault\0\1\5\0\0\blsp\tpath\rsnippets\vbuffer\15appearance\1\0\2\22nerd_font_variant\tmono\28use_nvim_cmp_as_default\2\vkeymap\1\0\4\fsources\0\vkeymap\0\15appearance\0\14signature\0\1\0\1\vpreset\fdefault\nsetup\14blink.cmp\frequire\0", "config", "blink.cmp")
+try_loadstring("\27LJ\2\n´\2\0\0\5\0\14\0\0176\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\4\0005\3\3\0=\3\5\0025\3\6\0=\3\a\0025\3\t\0005\4\b\0=\4\n\3=\3\v\0025\3\f\0=\3\r\2B\0\2\1K\0\1\0\14signature\1\0\1\fenabled\2\fsources\fdefault\1\0\1\fdefault\0\1\5\0\0\blsp\tpath\rsnippets\vbuffer\15appearance\1\0\2\22nerd_font_variant\tmono\28use_nvim_cmp_as_default\2\vkeymap\1\0\4\15appearance\0\fsources\0\vkeymap\0\14signature\0\1\0\1\vpreset\fdefault\nsetup\14blink.cmp\frequire\0", "config", "blink.cmp")
 time([[Config for blink.cmp]], false)
 -- Load plugins in order defined by `after`
 time([[Sequenced loading]], true)

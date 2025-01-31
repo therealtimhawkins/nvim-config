@@ -16,7 +16,7 @@ return require("packer").startup(function(use)
 		},
 	})
 	use("MunifTanjim/nui.nvim")
-	use("rcarriga/nvim-notify")
+	-- use("rcarriga/nvim-notify")
 	use("ludovicchabant/vim-gutentags")
 	use({
 		"folke/noice.nvim",
@@ -26,7 +26,7 @@ return require("packer").startup(function(use)
 		end,
 		requires = {
 			"MunifTanjim/nui.nvim",
-			"rcarriga/nvim-notify",
+			-- "rcarriga/nvim-notify",
 		},
 	})
 	use({

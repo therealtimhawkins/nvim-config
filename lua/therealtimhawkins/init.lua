@@ -7,6 +7,8 @@ vim.opt.path:append("node_modules")
 vim.opt.number = true
 vim.opt.relativenumber = false
 
+vim.opt.foldmethod = "indent"
+
 vim.opt.foldmethod = "indent" -- or syntax, manual, marker, expr
 vim.opt.foldlevel = 99
 

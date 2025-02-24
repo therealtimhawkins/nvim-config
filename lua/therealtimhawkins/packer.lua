@@ -16,7 +16,6 @@ return require("packer").startup(function(use)
 		},
 	})
 	use("MunifTanjim/nui.nvim")
-	-- use("rcarriga/nvim-notify")
 	use("ludovicchabant/vim-gutentags")
 	use({
 		"folke/noice.nvim",
@@ -26,7 +25,6 @@ return require("packer").startup(function(use)
 		end,
 		requires = {
 			"MunifTanjim/nui.nvim",
-			-- "rcarriga/nvim-notify",
 		},
 	})
 	use({
@@ -74,13 +72,6 @@ return require("packer").startup(function(use)
 		"krisajenkins/telescope-docker.nvim",
 		requires = { "nvim-telescope/telescope.nvim" },
 	})
-	use({
-		"tpope/vim-dadbod",
-		requires = {
-			"kristijanhusak/vim-dadbod-ui",
-			"tpope/vim-dotenv",
-		},
-	})
 	use({ "windwp/nvim-autopairs" })
 	use({
 		"mattn/emmet-vim",
@@ -89,5 +80,18 @@ return require("packer").startup(function(use)
 	use({
 		"folke/todo-comments.nvim",
 		requires = "nvim-lua/plenary.nvim",
+	})
+	use({
+		"folke/which-key.nvim",
+		config = function()
+			require("which-key").setup({
+				preset = "helix",
+			})
+		end,
+		setup = function()
+			vim.keymap.set("n", "<leader>?", function()
+				require("which-key").show({ global = false })
+			end, { desc = "Buffer Local Keymaps (which-key)" })
+		end,
 	})
 end)

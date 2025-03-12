@@ -94,4 +94,16 @@ return require("packer").startup(function(use)
 			end, { desc = "Buffer Local Keymaps (which-key)" })
 		end,
 	})
+	use({
+		"hedyhli/outline.nvim",
+		config = function()
+			vim.keymap.set("n", "<leader>o", "<cmd>Outline<CR>", { desc = "Toggle Outline" })
+			require("outline").setup({
+				outline_window = {
+					position = "left",
+					width = 18,
+				},
+			})
+		end,
+	})
 end)

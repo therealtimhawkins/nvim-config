@@ -23,10 +23,10 @@ vim.keymap.set("n", "<leader>yl", function()
 	local path_with_line = path .. ":" .. line_num
 	vim.fn.setreg("+", path_with_line)
 	vim.notify("Copied " .. path_with_line, vim.log.levels.INFO)
-end)
+end, { desc = "Copy path with line number" })
 
 vim.keymap.set("n", "<leader>yr", function()
 	local path = vim.fn.expand("%")
 	vim.fn.setreg("+", path)
 	vim.notify("Copied " .. path, vim.log.levels.INFO)
-end)
+end, { desc = "Copy path" })

@@ -75,7 +75,7 @@ time([[try_loadstring definition]], false)
 time([[Defining packer_plugins]], true)
 _G.packer_plugins = {
   ["blink.cmp"] = {
-    config = { "\27LJ\2\n¥\2\0\0\5\0\14\0\0176\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\4\0005\3\3\0=\3\5\0025\3\6\0=\3\a\0025\3\t\0005\4\b\0=\4\n\3=\3\v\0025\3\f\0=\3\r\2B\0\2\1K\0\1\0\14signature\1\0\1\fenabled\2\fsources\fdefault\1\0\1\fdefault\0\1\5\0\0\blsp\tpath\rsnippets\vbuffer\15appearance\1\0\2\28use_nvim_cmp_as_default\2\22nerd_font_variant\tmono\vkeymap\1\0\4\14signature\0\15appearance\0\vkeymap\0\fsources\0\1\0\1\vpreset\fdefault\nsetup\14blink.cmp\frequire\0" },
+    config = { "\27LJ\2\n¥\2\0\0\5\0\14\0\0176\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\4\0005\3\3\0=\3\5\0025\3\6\0=\3\a\0025\3\t\0005\4\b\0=\4\n\3=\3\v\0025\3\f\0=\3\r\2B\0\2\1K\0\1\0\14signature\1\0\1\fenabled\2\fsources\fdefault\1\0\1\fdefault\0\1\5\0\0\blsp\tpath\rsnippets\vbuffer\15appearance\1\0\2\22nerd_font_variant\tmono\28use_nvim_cmp_as_default\2\vkeymap\1\0\4\15appearance\0\vkeymap\0\fsources\0\14signature\0\1\0\1\vpreset\fdefault\nsetup\14blink.cmp\frequire\0" },
     loaded = true,
     path = "/Users/timothy.hawkins/.local/share/nvim/site/pack/packer/start/blink.cmp",
     url = "https://github.com/saghen/blink.cmp"
@@ -143,7 +143,7 @@ _G.packer_plugins = {
     url = "https://github.com/karb94/neoscroll.nvim"
   },
   ["noice.nvim"] = {
-    config = { "\27LJ\2\n7\0\0\3\0\3\0\a6\0\0\0'\2\1\0B\0\2\0029\0\2\0004\2\0\0B\0\2\1K\0\1\0\nsetup\nnoice\frequire\0" },
+    config = { "\27LJ\2\n÷\1\0\0\5\0\b\0\v6\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\6\0005\3\4\0005\4\3\0=\4\5\3=\3\a\2B\0\2\1K\0\1\0\blsp\1\0\1\blsp\0\roverride\1\0\1\roverride\0\1\0\0031vim.lsp.util.convert_input_to_markdown_lines\1\"vim.lsp.util.stylize_markdown\1 cmp.entry.get_documentation\1\nsetup\nnoice\frequire\0" },
     load_after = {},
     loaded = true,
     needs_bufread = false,
@@ -187,7 +187,7 @@ _G.packer_plugins = {
     url = "https://github.com/stevearc/oil.nvim"
   },
   ["outline.nvim"] = {
-    config = { "\27LJ\2\nﬂ\1\0\0\6\0\r\0\0176\0\0\0009\0\1\0009\0\2\0'\2\3\0'\3\4\0'\4\5\0005\5\6\0B\0\5\0016\0\a\0'\2\b\0B\0\2\0029\0\t\0005\2\v\0005\3\n\0=\3\f\2B\0\2\1K\0\1\0\19outline_window\1\0\1\19outline_window\0\1\0\2\nwidth\3\18\rposition\tleft\nsetup\foutline\frequire\1\0\1\tdesc\19Toggle Outline\21<cmd>Outline<CR>\14<leader>o\6n\bset\vkeymap\bvim\0" },
+    config = { "\27LJ\2\nﬂ\1\0\0\6\0\r\0\0176\0\0\0009\0\1\0009\0\2\0'\2\3\0'\3\4\0'\4\5\0005\5\6\0B\0\5\0016\0\a\0'\2\b\0B\0\2\0029\0\t\0005\2\v\0005\3\n\0=\3\f\2B\0\2\1K\0\1\0\19outline_window\1\0\1\19outline_window\0\1\0\2\rposition\tleft\nwidth\3\18\nsetup\foutline\frequire\1\0\1\tdesc\19Toggle Outline\21<cmd>Outline<CR>\14<leader>o\6n\bset\vkeymap\bvim\0" },
     loaded = true,
     path = "/Users/timothy.hawkins/.local/share/nvim/site/pack/packer/start/outline.nvim",
     url = "https://github.com/hedyhli/outline.nvim"
@@ -264,38 +264,38 @@ time([[Setup for which-key.nvim]], false)
 time([[packadd for which-key.nvim]], true)
 vim.cmd [[packadd which-key.nvim]]
 time([[packadd for which-key.nvim]], false)
--- Config for: blink.cmp
-time([[Config for blink.cmp]], true)
-try_loadstring("\27LJ\2\n¥\2\0\0\5\0\14\0\0176\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\4\0005\3\3\0=\3\5\0025\3\6\0=\3\a\0025\3\t\0005\4\b\0=\4\n\3=\3\v\0025\3\f\0=\3\r\2B\0\2\1K\0\1\0\14signature\1\0\1\fenabled\2\fsources\fdefault\1\0\1\fdefault\0\1\5\0\0\blsp\tpath\rsnippets\vbuffer\15appearance\1\0\2\28use_nvim_cmp_as_default\2\22nerd_font_variant\tmono\vkeymap\1\0\4\14signature\0\15appearance\0\vkeymap\0\fsources\0\1\0\1\vpreset\fdefault\nsetup\14blink.cmp\frequire\0", "config", "blink.cmp")
-time([[Config for blink.cmp]], false)
--- Config for: outline.nvim
-time([[Config for outline.nvim]], true)
-try_loadstring("\27LJ\2\nﬂ\1\0\0\6\0\r\0\0176\0\0\0009\0\1\0009\0\2\0'\2\3\0'\3\4\0'\4\5\0005\5\6\0B\0\5\0016\0\a\0'\2\b\0B\0\2\0029\0\t\0005\2\v\0005\3\n\0=\3\f\2B\0\2\1K\0\1\0\19outline_window\1\0\1\19outline_window\0\1\0\2\nwidth\3\18\rposition\tleft\nsetup\foutline\frequire\1\0\1\tdesc\19Toggle Outline\21<cmd>Outline<CR>\14<leader>o\6n\bset\vkeymap\bvim\0", "config", "outline.nvim")
-time([[Config for outline.nvim]], false)
 -- Config for: which-key.nvim
 time([[Config for which-key.nvim]], true)
 try_loadstring("\27LJ\2\nK\0\0\3\0\4\0\a6\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\3\0B\0\2\1K\0\1\0\1\0\1\vpreset\nhelix\nsetup\14which-key\frequire\0", "config", "which-key.nvim")
 time([[Config for which-key.nvim]], false)
+-- Config for: blink.cmp
+time([[Config for blink.cmp]], true)
+try_loadstring("\27LJ\2\n¥\2\0\0\5\0\14\0\0176\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\4\0005\3\3\0=\3\5\0025\3\6\0=\3\a\0025\3\t\0005\4\b\0=\4\n\3=\3\v\0025\3\f\0=\3\r\2B\0\2\1K\0\1\0\14signature\1\0\1\fenabled\2\fsources\fdefault\1\0\1\fdefault\0\1\5\0\0\blsp\tpath\rsnippets\vbuffer\15appearance\1\0\2\22nerd_font_variant\tmono\28use_nvim_cmp_as_default\2\vkeymap\1\0\4\15appearance\0\vkeymap\0\fsources\0\14signature\0\1\0\1\vpreset\fdefault\nsetup\14blink.cmp\frequire\0", "config", "blink.cmp")
+time([[Config for blink.cmp]], false)
+-- Config for: outline.nvim
+time([[Config for outline.nvim]], true)
+try_loadstring("\27LJ\2\nﬂ\1\0\0\6\0\r\0\0176\0\0\0009\0\1\0009\0\2\0'\2\3\0'\3\4\0'\4\5\0005\5\6\0B\0\5\0016\0\a\0'\2\b\0B\0\2\0029\0\t\0005\2\v\0005\3\n\0=\3\f\2B\0\2\1K\0\1\0\19outline_window\1\0\1\19outline_window\0\1\0\2\rposition\tleft\nwidth\3\18\nsetup\foutline\frequire\1\0\1\tdesc\19Toggle Outline\21<cmd>Outline<CR>\14<leader>o\6n\bset\vkeymap\bvim\0", "config", "outline.nvim")
+time([[Config for outline.nvim]], false)
 -- Load plugins in order defined by `after`
 time([[Sequenced loading]], true)
 vim.cmd [[ packadd nui.nvim ]]
 vim.cmd [[ packadd noice.nvim ]]
 
 -- Config for: noice.nvim
-try_loadstring("\27LJ\2\n7\0\0\3\0\3\0\a6\0\0\0'\2\1\0B\0\2\0029\0\2\0004\2\0\0B\0\2\1K\0\1\0\nsetup\nnoice\frequire\0", "config", "noice.nvim")
+try_loadstring("\27LJ\2\n÷\1\0\0\5\0\b\0\v6\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\6\0005\3\4\0005\4\3\0=\4\5\3=\3\a\2B\0\2\1K\0\1\0\blsp\1\0\1\blsp\0\roverride\1\0\1\roverride\0\1\0\0031vim.lsp.util.convert_input_to_markdown_lines\1\"vim.lsp.util.stylize_markdown\1 cmp.entry.get_documentation\1\nsetup\nnoice\frequire\0", "config", "noice.nvim")
 
 time([[Sequenced loading]], false)
 vim.cmd [[augroup packer_load_aucmds]]
 vim.cmd [[au!]]
   -- Filetype lazy-loads
 time([[Defining lazy-load filetype autocommands]], true)
+vim.cmd [[au FileType html ++once lua require("packer.load")({'emmet-vim'}, { ft = "html" }, _G.packer_plugins)]]
+vim.cmd [[au FileType svelte ++once lua require("packer.load")({'emmet-vim'}, { ft = "svelte" }, _G.packer_plugins)]]
+vim.cmd [[au FileType vue ++once lua require("packer.load")({'emmet-vim'}, { ft = "vue" }, _G.packer_plugins)]]
+vim.cmd [[au FileType css ++once lua require("packer.load")({'emmet-vim'}, { ft = "css" }, _G.packer_plugins)]]
+vim.cmd [[au FileType javascript ++once lua require("packer.load")({'emmet-vim'}, { ft = "javascript" }, _G.packer_plugins)]]
 vim.cmd [[au FileType typescriptreact ++once lua require("packer.load")({'emmet-vim'}, { ft = "typescriptreact" }, _G.packer_plugins)]]
 vim.cmd [[au FileType javascriptreact ++once lua require("packer.load")({'emmet-vim'}, { ft = "javascriptreact" }, _G.packer_plugins)]]
-vim.cmd [[au FileType vue ++once lua require("packer.load")({'emmet-vim'}, { ft = "vue" }, _G.packer_plugins)]]
-vim.cmd [[au FileType javascript ++once lua require("packer.load")({'emmet-vim'}, { ft = "javascript" }, _G.packer_plugins)]]
-vim.cmd [[au FileType svelte ++once lua require("packer.load")({'emmet-vim'}, { ft = "svelte" }, _G.packer_plugins)]]
-vim.cmd [[au FileType css ++once lua require("packer.load")({'emmet-vim'}, { ft = "css" }, _G.packer_plugins)]]
-vim.cmd [[au FileType html ++once lua require("packer.load")({'emmet-vim'}, { ft = "html" }, _G.packer_plugins)]]
 vim.cmd [[au FileType typescript ++once lua require("packer.load")({'emmet-vim'}, { ft = "typescript" }, _G.packer_plugins)]]
 time([[Defining lazy-load filetype autocommands]], false)
 vim.cmd("augroup END")

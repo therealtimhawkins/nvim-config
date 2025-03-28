@@ -21,7 +21,15 @@ return require("packer").startup(function(use)
 		"folke/noice.nvim",
 		after = "nui.nvim",
 		config = function()
-			require("noice").setup({})
+			require("noice").setup({
+				lsp = {
+					override = {
+						["vim.lsp.util.convert_input_to_markdown_lines"] = false,
+						["vim.lsp.util.stylize_markdown"] = false,
+						["cmp.entry.get_documentation"] = false,
+					},
+				},
+			})
 		end,
 		requires = {
 			"MunifTanjim/nui.nvim",
@@ -106,5 +114,5 @@ return require("packer").startup(function(use)
 			})
 		end,
 	})
-	use("tpope/vim-surround")
+	use({ "tpope/vim-surround" })
 end)

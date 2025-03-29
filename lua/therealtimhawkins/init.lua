@@ -26,6 +26,8 @@ vim.api.nvim_create_autocmd("VimEnter", {
 	pattern = "*",
 })
 
+vim.api.nvim_set_option("clipboard", "unnamed")
+
 vim.opt.path:append("src")
 vim.opt.path:append("node_modules")
 

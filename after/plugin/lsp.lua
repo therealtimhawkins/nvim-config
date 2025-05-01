@@ -1,6 +1,6 @@
 require("mason").setup()
 
-require("mason-lspconfig").setup({ ensure_installed = { "ts_ls" } })
+require("mason-lspconfig").setup({ ensure_installed = { "ts_ls", "emmet_language_server" } })
 
 local lspconfig = require("lspconfig")
 local capabilities = require("blink.cmp").get_lsp_capabilities()

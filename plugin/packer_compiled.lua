@@ -49,8 +49,8 @@ local function save_profiles(threshold)
 end
 
 time([[Luarocks path setup]], true)
-local package_path_str = "/Users/timothy.hawkins/.cache/nvim/packer_hererocks/2.1.1734355927/share/lua/5.1/?.lua;/Users/timothy.hawkins/.cache/nvim/packer_hererocks/2.1.1734355927/share/lua/5.1/?/init.lua;/Users/timothy.hawkins/.cache/nvim/packer_hererocks/2.1.1734355927/lib/luarocks/rocks-5.1/?.lua;/Users/timothy.hawkins/.cache/nvim/packer_hererocks/2.1.1734355927/lib/luarocks/rocks-5.1/?/init.lua"
-local install_cpath_pattern = "/Users/timothy.hawkins/.cache/nvim/packer_hererocks/2.1.1734355927/lib/lua/5.1/?.so"
+local package_path_str = "/Users/timothy.hawkins/.cache/nvim/packer_hererocks/2.1.1741730670/share/lua/5.1/?.lua;/Users/timothy.hawkins/.cache/nvim/packer_hererocks/2.1.1741730670/share/lua/5.1/?/init.lua;/Users/timothy.hawkins/.cache/nvim/packer_hererocks/2.1.1741730670/lib/luarocks/rocks-5.1/?.lua;/Users/timothy.hawkins/.cache/nvim/packer_hererocks/2.1.1741730670/lib/luarocks/rocks-5.1/?/init.lua"
+local install_cpath_pattern = "/Users/timothy.hawkins/.cache/nvim/packer_hererocks/2.1.1741730670/lib/lua/5.1/?.so"
 if not string.find(package.path, package_path_str, 1, true) then
   package.path = package.path .. ';' .. package_path_str
 end
@@ -96,10 +96,8 @@ _G.packer_plugins = {
     url = "https://github.com/Mofiqul/dracula.nvim"
   },
   ["emmet-vim"] = {
-    loaded = false,
-    needs_bufread = false,
-    only_cond = false,
-    path = "/Users/timothy.hawkins/.local/share/nvim/site/pack/packer/opt/emmet-vim",
+    loaded = true,
+    path = "/Users/timothy.hawkins/.local/share/nvim/site/pack/packer/start/emmet-vim",
     url = "https://github.com/mattn/emmet-vim"
   },
   ["friendly-snippets"] = {
@@ -187,7 +185,7 @@ _G.packer_plugins = {
     url = "https://github.com/stevearc/oil.nvim"
   },
   ["outline.nvim"] = {
-    config = { "\27LJ\2\nﬂ\1\0\0\6\0\r\0\0176\0\0\0009\0\1\0009\0\2\0'\2\3\0'\3\4\0'\4\5\0005\5\6\0B\0\5\0016\0\a\0'\2\b\0B\0\2\0029\0\t\0005\2\v\0005\3\n\0=\3\f\2B\0\2\1K\0\1\0\19outline_window\1\0\1\19outline_window\0\1\0\2\rposition\tleft\nwidth\3\18\nsetup\foutline\frequire\1\0\1\tdesc\19Toggle Outline\21<cmd>Outline<CR>\14<leader>o\6n\bset\vkeymap\bvim\0" },
+    config = { "\27LJ\2\nﬂ\1\0\0\6\0\r\0\0176\0\0\0009\0\1\0009\0\2\0'\2\3\0'\3\4\0'\4\5\0005\5\6\0B\0\5\0016\0\a\0'\2\b\0B\0\2\0029\0\t\0005\2\v\0005\3\n\0=\3\f\2B\0\2\1K\0\1\0\19outline_window\1\0\1\19outline_window\0\1\0\2\nwidth\3\18\rposition\tleft\nsetup\foutline\frequire\1\0\1\tdesc\19Toggle Outline\21<cmd>Outline<CR>\14<leader>o\6n\bset\vkeymap\bvim\0" },
     loaded = true,
     path = "/Users/timothy.hawkins/.local/share/nvim/site/pack/packer/start/outline.nvim",
     url = "https://github.com/hedyhli/outline.nvim"
@@ -274,7 +272,7 @@ try_loadstring("\27LJ\2\n¥\2\0\0\5\0\14\0\0176\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2
 time([[Config for blink.cmp]], false)
 -- Config for: outline.nvim
 time([[Config for outline.nvim]], true)
-try_loadstring("\27LJ\2\nﬂ\1\0\0\6\0\r\0\0176\0\0\0009\0\1\0009\0\2\0'\2\3\0'\3\4\0'\4\5\0005\5\6\0B\0\5\0016\0\a\0'\2\b\0B\0\2\0029\0\t\0005\2\v\0005\3\n\0=\3\f\2B\0\2\1K\0\1\0\19outline_window\1\0\1\19outline_window\0\1\0\2\rposition\tleft\nwidth\3\18\nsetup\foutline\frequire\1\0\1\tdesc\19Toggle Outline\21<cmd>Outline<CR>\14<leader>o\6n\bset\vkeymap\bvim\0", "config", "outline.nvim")
+try_loadstring("\27LJ\2\nﬂ\1\0\0\6\0\r\0\0176\0\0\0009\0\1\0009\0\2\0'\2\3\0'\3\4\0'\4\5\0005\5\6\0B\0\5\0016\0\a\0'\2\b\0B\0\2\0029\0\t\0005\2\v\0005\3\n\0=\3\f\2B\0\2\1K\0\1\0\19outline_window\1\0\1\19outline_window\0\1\0\2\nwidth\3\18\rposition\tleft\nsetup\foutline\frequire\1\0\1\tdesc\19Toggle Outline\21<cmd>Outline<CR>\14<leader>o\6n\bset\vkeymap\bvim\0", "config", "outline.nvim")
 time([[Config for outline.nvim]], false)
 -- Load plugins in order defined by `after`
 time([[Sequenced loading]], true)
@@ -285,20 +283,6 @@ vim.cmd [[ packadd noice.nvim ]]
 try_loadstring("\27LJ\2\n÷\1\0\0\5\0\b\0\v6\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\6\0005\3\4\0005\4\3\0=\4\5\3=\3\a\2B\0\2\1K\0\1\0\blsp\1\0\1\blsp\0\roverride\1\0\1\roverride\0\1\0\0031vim.lsp.util.convert_input_to_markdown_lines\1\"vim.lsp.util.stylize_markdown\1 cmp.entry.get_documentation\1\nsetup\nnoice\frequire\0", "config", "noice.nvim")
 
 time([[Sequenced loading]], false)
-vim.cmd [[augroup packer_load_aucmds]]
-vim.cmd [[au!]]
-  -- Filetype lazy-loads
-time([[Defining lazy-load filetype autocommands]], true)
-vim.cmd [[au FileType html ++once lua require("packer.load")({'emmet-vim'}, { ft = "html" }, _G.packer_plugins)]]
-vim.cmd [[au FileType svelte ++once lua require("packer.load")({'emmet-vim'}, { ft = "svelte" }, _G.packer_plugins)]]
-vim.cmd [[au FileType vue ++once lua require("packer.load")({'emmet-vim'}, { ft = "vue" }, _G.packer_plugins)]]
-vim.cmd [[au FileType css ++once lua require("packer.load")({'emmet-vim'}, { ft = "css" }, _G.packer_plugins)]]
-vim.cmd [[au FileType javascript ++once lua require("packer.load")({'emmet-vim'}, { ft = "javascript" }, _G.packer_plugins)]]
-vim.cmd [[au FileType typescriptreact ++once lua require("packer.load")({'emmet-vim'}, { ft = "typescriptreact" }, _G.packer_plugins)]]
-vim.cmd [[au FileType javascriptreact ++once lua require("packer.load")({'emmet-vim'}, { ft = "javascriptreact" }, _G.packer_plugins)]]
-vim.cmd [[au FileType typescript ++once lua require("packer.load")({'emmet-vim'}, { ft = "typescript" }, _G.packer_plugins)]]
-time([[Defining lazy-load filetype autocommands]], false)
-vim.cmd("augroup END")
 
 _G._packer.inside_compile = false
 if _G._packer.needs_bufread == true then

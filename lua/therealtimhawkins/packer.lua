@@ -82,10 +82,6 @@ return require("packer").startup(function(use)
 	})
 	use({ "windwp/nvim-autopairs" })
 	use({
-		"mattn/emmet-vim",
-		ft = { "html", "css", "javascript", "javascriptreact", "typescript", "typescriptreact", "vue", "svelte" },
-	})
-	use({
 		"folke/todo-comments.nvim",
 		requires = "nvim-lua/plenary.nvim",
 	})
@@ -109,10 +105,11 @@ return require("packer").startup(function(use)
 			require("outline").setup({
 				outline_window = {
 					position = "left",
-					width = 18,
+					width = 30,
 				},
 			})
 		end,
 	})
 	use({ "tpope/vim-surround" })
+	use({ 'mattn/emmet-vim' })
 end)

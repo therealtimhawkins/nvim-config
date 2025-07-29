@@ -11,5 +11,5 @@ vim.keymap.set('n', '<leader>z', 'za', { desc = 'Toggle fold' })
 
 vim.api.nvim_set_hl(0, "Folded", {
 	bg = colors.visual,
-	fg = colors.foreground
+	fg = colors.white
 })

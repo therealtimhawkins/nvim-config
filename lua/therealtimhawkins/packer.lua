@@ -112,4 +112,8 @@ return require("packer").startup(function(use)
 	})
 	use({ "tpope/vim-surround" })
 	use({ 'mattn/emmet-vim' })
+	use {
+		'nvim-pack/nvim-spectre',
+		requires = { 'nvim-lua/plenary.nvim' }
+	}
 end)
